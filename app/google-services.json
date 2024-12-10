@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "87945601417",
+    "project_id": "recipe-sharing-app-77a56",
+    "storage_bucket": "recipe-sharing-app-77a56.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87945601417:android:da04e887c2e362ac170158",
+        "android_client_info": {
+          "package_name": "com.example.recipesharingappfinal2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "87945601417-7plr28msit2epkog8071rplm3qjvnngf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.recipesharingappfinal2",
+            "certificate_hash": "ca1ca0dcfea0eda9e24938813afa5fc509d5b9ef"
+          }
+        },
+        {
+          "client_id": "87945601417-hn3l46rn06v9l9t48b0oaqlggj0f9urr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvYy4aUM76CatLkQZKr9DiStb-A65WlrE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "87945601417-hn3l46rn06v9l9t48b0oaqlggj0f9urr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
