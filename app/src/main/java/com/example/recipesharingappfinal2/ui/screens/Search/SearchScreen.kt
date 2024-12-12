@@ -1,4 +1,4 @@
-package com.example.recipesharingappfinal2.ui.screens
+package com.example.recipesharingappfinal2.ui.screens.Search
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
@@ -17,7 +17,6 @@ import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
-import androidx.navigation.compose.rememberNavController
 import com.example.recipesharingappfinal2.R
 
 /**

@@ -1,4 +1,4 @@
-package com.example.recipesharingappfinal2.ui.screens
+package com.example.recipesharingappfinal2.ui.screens.Recipe
 
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.compose.foundation.Image

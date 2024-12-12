@@ -1,4 +1,4 @@
-package com.example.recipesharingappfinal2.ui.screens
+package com.example.recipesharingappfinal2.ui.screens.Search
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn

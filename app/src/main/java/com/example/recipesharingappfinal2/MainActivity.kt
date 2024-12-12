@@ -27,6 +27,19 @@ import com.google.firebase.FirebaseApp
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.example.recipesharingappfinal2.ui.screens.*
+import com.example.recipesharingappfinal2.ui.screens.Account.AccountScreen
+import com.example.recipesharingappfinal2.ui.screens.Account.AppSettingsScreen
+import com.example.recipesharingappfinal2.ui.screens.Account.ChangePasswordScreen
+import com.example.recipesharingappfinal2.ui.screens.Account.EditProfileScreen
+import com.example.recipesharingappfinal2.ui.screens.Account.ForgotPasswordScreen
+import com.example.recipesharingappfinal2.ui.screens.Account.LoginScreen
+import com.example.recipesharingappfinal2.ui.screens.Account.SignUpScreen
+import com.example.recipesharingappfinal2.ui.screens.Recipe.AddRecipeScreen
+import com.example.recipesharingappfinal2.ui.screens.Recipe.FavouriteScreen
+import com.example.recipesharingappfinal2.ui.screens.Recipe.RecipeDetailScreen
+import com.example.recipesharingappfinal2.ui.screens.Search.SearchResultsScreen
+import com.example.recipesharingappfinal2.ui.screens.Search.SearchScreen
+import com.example.recipesharingappfinal2.ui.screens.Shared.HomeScreen
 import com.example.recipesharingappfinal2.ui.theme.RecipeSharingAppFinal2Theme
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.ktx.firestore
@@ -111,7 +124,7 @@ fun MainScreen(auth: FirebaseAuth, db: FirebaseFirestore) {
                 HomeScreen(navController = navController, db = db)
             }
             composable("search") {
-                SearchScreen(navController) // Pass navController to handle search
+                SearchScreen(navController = navController)
             }
             composable("favourites") { FavouriteScreen() }
             composable("account") {
@@ -162,7 +175,7 @@ fun MainScreen(auth: FirebaseAuth, db: FirebaseFirestore) {
             }
             composable("searchResults/{query}") { backStackEntry ->
                 val query = backStackEntry.arguments?.getString("query") ?: ""
-                SearchResultsScreen(query) // Only pass the search query to the results screen
+                SearchResultsScreen(query = query)
             }
         }
     }
@@ -178,27 +191,31 @@ fun BottomNavBar(navController: NavHostController) {
     NavigationBar {
         NavigationBarItem(
             icon = { Icon(Icons.Filled.Home, contentDescription = "Home") },
-            label = { Text("Home") },
+            label = { Text("Home", color = Color.Black) },
             selected = false,
-            onClick = { navController.navigate("home") }
+            onClick = { navController.navigate("home") },
+            alwaysShowLabel = true
         )
         NavigationBarItem(
             icon = { Icon(Icons.Filled.Search, contentDescription = "Search") },
-            label = { Text("Search") },
+            label = { Text("Search", color = Color.Black) },
             selected = false,
-            onClick = { navController.navigate("search") }
+            onClick = { navController.navigate("search") },
+            alwaysShowLabel = true
         )
         NavigationBarItem(
             icon = { Icon(Icons.Filled.Favorite, contentDescription = "Favourites") },
-            label = { Text("Favourites") },
+            label = { Text("Favourites", color = Color.Black) },
             selected = false,
-            onClick = { navController.navigate("favourites") }
+            onClick = { navController.navigate("favourites") },
+            alwaysShowLabel = true
         )
         NavigationBarItem(
             icon = { Icon(Icons.Filled.AccountCircle, contentDescription = "Account") },
-            label = { Text("Account") },
+            label = { Text("Account", color = Color.Black) },
             selected = false,
-            onClick = { navController.navigate("account") }
+            onClick = { navController.navigate("account") },
+            alwaysShowLabel = true
         )
     }
 }

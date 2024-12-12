@@ -1,4 +1,4 @@
-package com.example.recipesharingappfinal2.ui.screens
+package com.example.recipesharingappfinal2.ui.screens.Account
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
